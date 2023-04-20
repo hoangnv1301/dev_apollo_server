@@ -1,10 +1,25 @@
 {
   "menu": [
     {
-      "url": "/",
+      "url": "/cms",
       "name": "Dashboard",
       "icon": "menu-icon tf-icons bx bx-home-circle",
       "slug": "dashboard-analytics"
+    },
+    {
+        "menuHeader": "Posts"
+    },
+    {
+        "name": "Posts management",
+        "icon": "menu-icon tf-icons bx bx-detail",
+        "slug": "cms.postsPage",
+        "submenu": [
+          {
+            "url": "/cms/posts-page",
+            "name": "Posts",
+            "slug": "cms.postsPage"
+          }
+        ]
     },
     {
       "name": "Layouts",
@@ -12,27 +27,27 @@
       "slug": "layouts",
       "submenu": [
         {
-          "url": "/layouts/without-menu",
+          "url": "/cms/layouts/without-menu",
           "name": "Without menu",
           "slug": "layouts-without-menu"
         },
         {
-          "url": "/layouts/without-navbar",
+          "url": "/cms/layouts/without-navbar",
           "name": "Without navbar",
           "slug": "layouts-without-navbar"
         },
         {
-          "url": "/layouts/container",
+          "url": "/cms/layouts/container",
           "name": "Container",
           "slug": "layouts-container"
         },
         {
-          "url": "/layouts/fluid",
+          "url": "/cms/layouts/fluid",
           "name": "Fluid",
           "slug": "layouts-fluid"
         },
         {
-          "url": "/layouts/blank",
+          "url": "/cms/layouts/blank",
           "name": "Blank",
           "slug": "layouts-blank",
           "target": "_blank"
@@ -48,17 +63,17 @@
       "slug": "pages-account-settings",
       "submenu": [
         {
-          "url": "/pages/account-settings-account",
+          "url": "/cms/pages/account-settings-account",
           "name": "Account",
           "slug": "pages-account-settings-account"
         },
         {
-          "url": "/pages/account-settings-notifications",
+          "url": "/cms/pages/account-settings-notifications",
           "name": "Notifications",
           "slug": "pages-account-settings-notifications"
         },
         {
-          "url": "/pages/account-settings-connections",
+          "url": "/cms/pages/account-settings-connections",
           "name": "Connections",
           "slug": "pages-account-settings-connections"
         }
@@ -70,19 +85,19 @@
       "slug": "auth",
       "submenu": [
         {
-          "url": "/auth/login-basic",
+          "url": "/cms/auth/login-basic",
           "name": "Login",
           "slug": "auth-login-basic",
           "target": "_blank"
         },
         {
-          "url": "/auth/register-basic",
+          "url": "/cms/auth/register-basic",
           "name": "Register",
           "slug": "auth-register-basic",
           "target": "_blank"
         },
         {
-          "url": "/auth/forgot-password-basic",
+          "url": "/cms/auth/forgot-password-basic",
           "name": "Forgot Password",
           "slug": "auth-forgot-password-basic",
           "target": "_blank"
@@ -95,13 +110,13 @@
       "slug": "pages-misc",
       "submenu": [
         {
-          "url": "/pages/misc-error",
+          "url": "/cms/pages/misc-error",
           "name": "Error",
           "slug": "pages-misc-error",
           "target": "_blank"
         },
         {
-          "url": "/pages/misc-under-maintenance",
+          "url": "/cms/pages/misc-under-maintenance",
           "name": "Under Maintenance",
           "slug": "pages-misc-under-maintenance",
           "target": "_blank"
@@ -115,7 +130,7 @@
       "name": "Cards",
       "icon": "menu-icon tf-icons bx bx-collection",
       "slug": "cards-basic",
-      "url": "/cards/basic"
+      "url": "/cms/cards/basic"
     },
     {
       "name": "User interface",
@@ -123,97 +138,97 @@
       "slug": "ui",
       "submenu": [
         {
-          "url": "ui/accordion",
+          "url": "/cms/ui/accordion",
           "name": "Accordion",
           "slug": "ui-accordion"
         },
         {
-          "url": "ui/alerts",
+          "url": "/cms/ui/alerts",
           "name": "Alerts",
           "slug": "ui-alerts"
         },
         {
-          "url": "ui/badges",
+          "url": "/cms/ui/badges",
           "name": "Badges",
           "slug": "ui-badges"
         },
         {
-          "url": "ui/buttons",
+          "url": "/cms/ui/buttons",
           "name": "Buttons",
           "slug": "ui-buttons"
         },
         {
-          "url": "ui/carousel",
+          "url": "/cms/ui/carousel",
           "name": "Carousel",
           "slug": "ui-carousel"
         },
         {
-          "url": "ui/collapse",
+          "url": "/cms/ui/collapse",
           "name": "Collapse",
           "slug": "ui-collapse"
         },
         {
-          "url": "ui/dropdowns",
+          "url": "/cms/ui/dropdowns",
           "name": "Dropdowns",
           "slug": "ui-dropdowns"
         },
         {
-          "url": "ui/footer",
+          "url": "/cms/ui/footer",
           "name": "Footer",
           "slug": "ui-footer"
         },
         {
-          "url": "ui/list-groups",
+          "url": "/cms/ui/list-groups",
           "name": "List groups",
           "slug": "ui-list-groups"
         },
         {
-          "url": "ui/modals",
+          "url": "/cms/ui/modals",
           "name": "Modals",
           "slug": "ui-modals"
         },
         {
-          "url": "ui/navbar",
+          "url": "/cms/ui/navbar",
           "name": "Navbar",
           "slug": "ui-navbar"
         },
         {
-          "url": "ui/offcanvas",
+          "url": "/cms/ui/offcanvas",
           "name": "Offcanvas",
           "slug": "ui-offcanvas"
         },
         {
-          "url": "ui/pagination-breadcrumbs",
+          "url": "/cms/ui/pagination-breadcrumbs",
           "name": "Pagination & Breadcrumbs",
           "slug": "ui-pagination-breadcrumbs"
         },
         {
-          "url": "ui/progress",
+          "url": "/cms/ui/progress",
           "name": "Progress",
           "slug": "ui-progress"
         },
         {
-          "url": "ui/spinners",
+          "url": "/cms/ui/spinners",
           "name": "Spinners",
           "slug": "ui-spinners"
         },
         {
-          "url": "ui/tabs-pills",
+          "url": "/cms/ui/tabs-pills",
           "name": "Tabs & Pills",
           "slug": "ui-tabs-pills"
         },
         {
-          "url": "ui/toasts",
+          "url": "/cms/ui/toasts",
           "name": "Toasts",
           "slug": "ui-toasts"
         },
         {
-          "url": "ui/tooltips-popovers",
+          "url": "/cms/ui/tooltips-popovers",
           "name": "Tooltips & popovers",
           "slug": "ui-tooltips-popovers"
         },
         {
-          "url": "ui/typography",
+          "url": "/cms/ui/typography",
           "name": "Typography",
           "slug": "ui-typography"
         }
@@ -225,19 +240,19 @@
       "slug": "extended",
       "submenu": [
         {
-          "url": "extended/ui-perfect-scrollbar",
+          "url": "/cms/extended/ui-perfect-scrollbar",
           "name": "Perfect scrollbar",
           "slug": "extended-ui-perfect-scrollbar"
         },
         {
-          "url": "extended/ui-text-divider",
+          "url": "/cms/extended/ui-text-divider",
           "name": "Text Divider",
           "slug": "extended-ui-text-divider"
         }
       ]
     },
     {
-      "url": "icons/boxicons",
+      "url": "/cms/icons/boxicons",
       "icon": "menu-icon tf-icons bx bx-crown",
       "name": "Boxicons",
       "slug": "icons-boxicons"
@@ -251,12 +266,12 @@
       "slug": "forms",
       "submenu": [
         {
-          "url": "forms/basic-inputs",
+          "url": "/cms/forms/basic-inputs",
           "name": "Basic Inputs",
           "slug": "forms-basic-inputs"
         },
         {
-          "url": "forms/input-groups",
+          "url": "/cms/forms/input-groups",
           "name": "Input groups",
           "slug": "forms-input-groups"
         }
@@ -268,19 +283,19 @@
       "slug": "form-layouts",
       "submenu": [
         {
-          "url": "form/layouts-vertical",
+          "url": "/cms/form/layouts-vertical",
           "name": "Vertical Form",
           "slug": "form-layouts-vertical"
         },
         {
-          "url": "form/layouts-horizontal",
+          "url": "/cms/form/layouts-horizontal",
           "name": "Horizontal Form",
           "slug": "form-layouts-horizontal"
         }
       ]
     },
     {
-      "url": "tables/basic",
+      "url": "/cms/tables/basic",
       "icon": "menu-icon tf-icons bx bx-table",
       "name": "Tables",
       "slug": "tables-basic"

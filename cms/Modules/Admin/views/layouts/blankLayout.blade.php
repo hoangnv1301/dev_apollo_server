@@ -1,4 +1,4 @@
-@extends('layouts/commonMaster' )
+@extends('Admin::layouts/commonMaster' )
 
 @section('layoutContent')
 

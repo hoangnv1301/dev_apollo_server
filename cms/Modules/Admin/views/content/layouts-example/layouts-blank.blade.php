@@ -1,4 +1,4 @@
-@extends('layouts/blankLayout')
+@extends('Admin::layouts/blankLayout')
 
 @section('title', 'Blank layout - Layouts')
 

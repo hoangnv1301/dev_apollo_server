@@ -24,7 +24,126 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'home.index',
+            '_route' => 'cms.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cms/posts-page' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.page',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cms/post-create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cms/post-store' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cms/layouts/blank' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.layoutsBlank',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cms/forms/basic-inputs' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'forms-basic-inputs',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cms/forms/input-groups' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'forms-input-groups',
           ),
           1 => NULL,
           2 => 
@@ -61,7 +180,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::kAPe6b2vMpH9LSgS',
+            '_route' => 'generated::WEZVqgH6RYldwDPr',
           ),
           1 => NULL,
           2 => 
@@ -97,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::egjKM0NRQjqlWBlW',
+            '_route' => 'generated::ORs3WWtj9IdZS4C8',
           ),
           1 => NULL,
           2 => 
@@ -447,11 +566,101 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/password/reset/([^/]++)(*:31)|/email/verify/([^/]++)/([^/]++)(*:69))/?$}sDu',
+      0 => '{^(?|/cms/post\\-(?|de(?|tail/([^/]++)(*:39)|lete/([^/]++)(*:59))|edit/([^/]++)(*:80)|update/([^/]++)(*:102))|/password/reset/([^/]++)(*:135)|/email/verify/([^/]++)/([^/]++)(*:174))/?$}sDu',
     ),
     3 => 
     array (
-      31 => 
+      39 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.detail',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      59 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.delete',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      80 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      102 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cms.post.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      135 => 
       array (
         0 => 
         array (
@@ -474,7 +683,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      69 => 
+      174 => 
       array (
         0 => 
         array (
@@ -513,7 +722,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'home.index' => 
+    'cms.index' => 
     array (
       'methods' => 
       array (
@@ -532,11 +741,398 @@ app('router')->setCompiledRoutes(
         'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@index',
         'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@index',
         'namespace' => 'Cms\\Modules\\Admin\\Controllers',
-        'prefix' => '',
+        'prefix' => 'cms',
         'where' => 
         array (
         ),
-        'as' => 'home.index',
+        'as' => 'cms.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.page' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/posts-page',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsPage',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsPage',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.page',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/post-create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsCreate',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsCreate',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.create',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.detail' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/post-detail/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsDetail',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsDetail',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.detail',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'cms/post-store',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsStore',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsStore',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.store',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/post-edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsEdit',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsEdit',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.edit',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'cms/post-update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsUpdate',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsUpdate',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.update',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.post.delete' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'cms/post-delete/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsDelete',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@postsDelete',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.post.delete',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cms.layoutsBlank' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/layouts/blank',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@layoutsBlank',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@layoutsBlank',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'cms.layoutsBlank',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'forms-basic-inputs' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/forms/basic-inputs',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@formsBasicInputs',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@formsBasicInputs',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'forms-basic-inputs',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'forms-input-groups' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cms/forms/input-groups',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+          2 => 'cms.verified',
+        ),
+        'uses' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@formsInputGroups',
+        'controller' => 'Cms\\Modules\\Admin\\Controllers\\AdminController@formsInputGroups',
+        'namespace' => 'Cms\\Modules\\Admin\\Controllers',
+        'prefix' => 'cms',
+        'where' => 
+        array (
+        ),
+        'as' => 'forms-input-groups',
       ),
       'fallback' => false,
       'defaults' => 
@@ -590,7 +1186,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::kAPe6b2vMpH9LSgS' => 
+    'generated::WEZVqgH6RYldwDPr' => 
     array (
       'methods' => 
       array (
@@ -611,7 +1207,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::kAPe6b2vMpH9LSgS',
+        'as' => 'generated::WEZVqgH6RYldwDPr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -665,7 +1261,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::egjKM0NRQjqlWBlW' => 
+    'generated::ORs3WWtj9IdZS4C8' => 
     array (
       'methods' => 
       array (
@@ -686,7 +1282,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::egjKM0NRQjqlWBlW',
+        'as' => 'generated::ORs3WWtj9IdZS4C8',
       ),
       'fallback' => false,
       'defaults' => 

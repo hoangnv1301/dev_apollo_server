@@ -3,9 +3,11 @@
   array (
     'name' => 'Laravel',
     'env' => 'local',
+    'version' => '1.0.0',
     'debug' => true,
     'url' => 'http://localhost',
     'asset_url' => NULL,
+    'force_ssl' => false,
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
@@ -105,7 +107,7 @@
       'users' => 
       array (
         'driver' => 'eloquent',
-        'model' => 'App\\Models\\User',
+        'model' => 'Cms\\Modules\\Core\\Models\\User',
       ),
     ),
     'passwords' => 
