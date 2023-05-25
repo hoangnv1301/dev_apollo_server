@@ -37,5 +37,9 @@ class CorePostRepository implements CorePostRepositoryContract
     {
         return $this->model->destroy($id);
     }
+
+    public function timhocdot(){
+        
+    }
 }
 
